@@ -1,38 +1,4 @@
 
-// const cardContainer = document.getElementById("cardContainer");
-// const gridViewButton = document.getElementById("gridView");
-// const flexViewButton = document.getElementById("flexView");
-
-// gridViewButton.addEventListener("click", () => {
-//   cardContainer.classList.remove("flex-layout");
-//   gridViewButton.classList.add("active");
-//   flexViewButton.classList.remove("active");
-// });
-
-// flexViewButton.addEventListener("click", () => {
-//   cardContainer.classList.add("flex-layout");
-//   flexViewButton.classList.add("active");
-//   gridViewButton.classList.remove("active");
-// });
-
-// document.querySelectorAll('.likeBtn').forEach(function(btn) {
-//   btn.addEventListener('click', function() {
-//     const regularHeart = this.querySelector('.fa-regular');
-//     const solidHeart = this.querySelector('.fa-solid');
-
-//     if (solidHeart.style.display === 'none' || !solidHeart.style.display) {
-//       regularHeart.style.display = 'none';
-//       solidHeart.style.display = 'inline';
-//     } else {
-//       regularHeart.style.display = 'inline';
-//       solidHeart.style.display = 'none';
-//     }
-//   });
-// });
-
-
-//card view script end
-
 //banner slider
 $(document).ready(function(){
   $('#slider').slick({
