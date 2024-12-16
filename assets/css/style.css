@@ -95,6 +95,20 @@ p {
 }
 
 /* shop css start*/
+.shop {
+  margin-block-start: 50px;
+  padding-inline: 20px;
+  @media only screen and (max-width: 599px) {
+    padding-inline: 0px;
+  }
+
+  .column-70 {
+    input[type="radio"] {
+      display: none;
+    }
+  }
+}
+/* shop section left side start  */
 
 .search {
   margin-block-end: 20px;
@@ -113,6 +127,7 @@ p {
     }
   }
 }
+
 .toggle {
   flex-wrap: wrap;
   margin-inline-start: 20px;
@@ -123,10 +138,9 @@ p {
     margin-inline-end: 25px;
   }
   @media only screen and (max-width: 599px) {
-  label.off{
-    width: 60%;
-  }
-  
+    label.off {
+      width: 60%;
+    }
   }
 }
 .short {
@@ -137,8 +151,7 @@ p {
     padding-inline: 10px;
   }
   @media only screen and (max-width: 599px) {
-  flex-direction: column;
-  
+    flex-direction: column;
   }
 }
 
@@ -216,19 +229,11 @@ figure .card-img {
   }
 }
 .shop {
-  margin-block-start: 50px;
-  padding-inline: 20px;
-  @media only screen and (max-width: 599px) {
-    padding-inline: 0px;
-  }
-
-  .column-70 {
+  .shop-left {
+    flex: 0 0 60%;
     input[type="radio"] {
       display: none;
     }
-  }
-  .shop-left {
-    flex: 0 0 60%;
     .shop-card-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -296,8 +301,8 @@ input#off:checked ~ .shop-card-container {
     grid-template-columns: 1fr 1.3fr;
     padding: 20px;
     gap: 20px;
-    .card-header{
-      .author-img{
+    .card-header {
+      .author-img {
         display: none;
       }
     }
@@ -314,9 +319,57 @@ input#off:checked ~ .shop-card-container {
     }
   }
 }
-.shop-right{
-  
+/* shop section left side end  */
+/* shop section right side start  */
+.shop-right {
+  .sidebar {
+    .widget {
+      margin: 0px;
+      padding-block-end: 0px;
+      ul {
+        padding-block-start: 20px;
+        li {
+          width: 80%;
+        }
+      }
+    }
+  }
 }
+
+.widget-checkbox:checked ~ .check-mark i {
+  display: block;
+}
+.widget-checkbox:checked ~ .check-mark {
+  border: 1px solid var(--color-hover);
+  background-color: var(--color-hover);
+}
+.widget-checkbox {
+  display: none;
+}
+.checkbox-item{
+
+  cursor: pointer;
+}
+.check-mark {
+  z-index: 4;
+  height: 15px;
+  width: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline-end: 20px;
+  margin-block-end: 20px;
+  border: 1px solid var(--color-deep-2);
+  background-color: var(--color-light);
+  cursor: pointer;
+  i {
+    display: none;
+    font-size: 0.8rem;
+    color: var(--color-light);
+    background-color: var(--color-hover);
+  }
+}
+/* shop section right side end  */
 /* shop css end  */
 /* team style  */
 /* first {  */
