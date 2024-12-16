@@ -95,6 +95,24 @@ p {
 }
 
 /* shop css start*/
+
+.search {
+  margin-block-end: 20px;
+  margin-inline-start: 10px;
+  input,
+  button {
+    padding: 10px;
+    border: 0;
+  }
+  button {
+    color: var(--color-light);
+    background-color: var(--color-hover);
+    cursor: pointer;
+    &:hover {
+      background-color: var(--color-deep-1);
+    }
+  }
+}
 .toggle {
   flex-wrap: wrap;
   margin-inline-start: 20px;
@@ -104,17 +122,26 @@ p {
     cursor: pointer;
     margin-inline-end: 25px;
   }
-
-  .short {
-    gap: 25px;
-
-    select {
-      margin-block-end: 20px;
-      width: 150px;
-      padding-inline: 10px;
-    }
+  @media only screen and (max-width: 599px) {
+  label.off{
+    width: 60%;
+  }
+  
   }
 }
+.short {
+  gap: 25px;
+  select {
+    width: 150px;
+    height: 40px;
+    padding-inline: 10px;
+  }
+  @media only screen and (max-width: 599px) {
+  flex-direction: column;
+  
+  }
+}
+
 .author-img {
   width: 50px;
   border-radius: 50%;
@@ -125,40 +152,59 @@ figure .card-img {
 .shop-card {
   width: 100%;
 }
-.card-title{
+.card-title {
   font-size: 1.4rem;
-}
-.location a {
-  align-items: center;
-  font-size: 0.9rem;
-  i {
-    color: var(--color-hover);
-  }
-  &:hover p {
+  &:hover {
     color: var(--color-hover);
   }
 }
-.product-detail{
+.location {
+  padding-block: 10px;
+  a {
+    align-items: center;
+    font-size: 0.9rem;
+    gap: 5px;
+    i {
+      color: var(--color-hover);
+    }
+    &:hover p {
+      color: var(--color-hover);
+    }
+  }
+}
+.product-detail {
   font-size: 0.8rem;
   gap: 10px;
   color: var(--color-deep-1);
-  li span{
+  li span {
     font-weight: 700;
   }
 }
-.card-links{
-  a{
-    i{
+.card-links {
+  padding-block: 10px;
+  a {
+    i {
       padding: 10px;
       color: var(--color-deep-1);
-    &:hover{
-      color: var(--color-light);
-      background-color: var(--color-hover);
-    }
+      &:hover {
+        color: var(--color-light);
+        background-color: var(--color-hover);
+      }
     }
   }
 }
-.card_footer{
+.column_view {
+  align-items: center;
+  padding-bottom: 10px;
+  margin-block-start: 20px;
+  .agent_brief {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-inline-start: 10px;
+  }
+}
+.card_footer {
   border-top: 1px solid var(--color-deep-1);
   padding-block: 1.5rem;
 }
@@ -171,6 +217,10 @@ figure .card-img {
 }
 .shop {
   margin-block-start: 50px;
+  padding-inline: 20px;
+  @media only screen and (max-width: 599px) {
+    padding-inline: 0px;
+  }
 
   .column-70 {
     input[type="radio"] {
@@ -178,10 +228,14 @@ figure .card-img {
     }
   }
   .shop-left {
+    flex: 0 0 60%;
     .shop-card-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
+      padding-inline-end: 20px;
+      width: 100%;
+      overflow: hidden;
       @media only screen and (max-width: 599px) {
         grid-template-columns: 1fr;
         gap: 0px;
@@ -198,6 +252,7 @@ figure .card-img {
         }
         .card-body {
           .card-body-heading {
+            padding-block: 10px;
             .label {
               color: var(--color-hover);
               font-size: 1rem;
@@ -215,29 +270,53 @@ input#on:checked ~ .toggle label.on i {
 }
 input#on:checked ~ .shop-card-container {
   /* card style for grid view  */
-
+  .shop-card {
+    .card-body {
+      .card-body-heading {
+        .product_price {
+          display: none;
+        }
+      }
+      .column_view {
+        display: none;
+      }
+    }
+  }
 }
 /* on is end  */
 /* off is flex/list  */
 input#off:checked ~ .toggle label.off i {
   color: var(--color-hover);
-  
 }
 input#off:checked ~ .shop-card-container {
   /* card style for flex view  */
   grid-template-columns: 1fr;
-  .shop-card{
+  .shop-card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.3fr;
     padding: 20px;
     gap: 20px;
+    .card-header{
+      .author-img{
+        display: none;
+      }
+    }
+    .card-body {
+      .card-links.first {
+        display: none;
+      }
+    }
+    .card_footer {
+      display: none;
+    }
     @media only screen and (max-width: 599px) {
       grid-template-columns: 1fr;
     }
   }
-
 }
-
+.shop-right{
+  
+}
 /* shop css end  */
 /* team style  */
 /* first {  */
