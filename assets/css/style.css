@@ -328,9 +328,6 @@ input#off:checked ~ .shop-card-container {
       padding-block-end: 0px;
       ul {
         padding-block-start: 20px;
-        li {
-          width: 80%;
-        }
       }
     }
   }
@@ -346,8 +343,7 @@ input#off:checked ~ .shop-card-container {
 .widget-checkbox {
   display: none;
 }
-.checkbox-item{
-
+.checkbox-item {
   cursor: pointer;
 }
 .check-mark {
