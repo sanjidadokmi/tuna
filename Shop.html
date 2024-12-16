@@ -17,25 +17,180 @@
   <body>
     <div class="shop_grid">
       <div class="container">
-        <div class="row">
-          <div class="column-70">
-            
-          </div>
-          <div class="column-30">
-            <h3>Advance Information</h3>
-            <div class="sidebar">
+        <div class="row shop">
+          <div class="column-70 shop-left">
+            <!-- Toggle Buttons -->
+            <input type="radio" name="toggle" id="on" checked />
+            <input type="radio" name="toggle" id="off" />
+
+            <div class="toggle d-flex">
+              
+              <label for="on" class="on"><i class="fa-solid fa-table-cells-large"></i></label>
+
+              <label for="off" class="off"><i class="fa-solid fa-list-ul"></i></label>
+
+              <!-- search options  -->
+              <div class="short d-flex">
+                <select name="" id="">
+                  <option value="">Default Setting</option>
+                </select>
+                <select name="" id="">
+                  <option value="">Per Page 12</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- card container for all cards  -->
+            <div class="shop-card-container">
+
+              <!-- card 1  -->
+              <div class="shop-card">
+                <div class="card-header">
+                  <figure>
+                    <img class="card-img" src="./assets/images/grid-1.jpg" alt="" />
+                  </figure>
+                  <img class="author-img" src="./assets/images/author.jpg" alt="" />
+                </div>
+                
+                <div class="card-body">
+                  <div class="card-body-heading d-flex between">
+                    <p>FOR RENT</p>
+                    <!-- hide  -->
+                    <p class="">&dollar;34,900</p>
+                  </div>
+                  <a href="#">
+                    <h1>New Apartment Nice View</h1>
+                  </a>
+                  <div class="location">
+                    <a href="#" class="d-flex">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <p>Belmont Gardens, Chicago</p>
+                    </a>
+                  </div>
+                  <ul class="detail d-flex">
+                    <li><span>3 </span>Bed</li>
+                    <li><span>2 </span>Bath</li>
+                    <li><span>3450 </span>Square Ft</li>
+                  </ul>
+                  <div class="card_links flex">
+                    <a href="#" class="quick_view" title="Quick View"
+                      ><i
+                        class="fa-solid fa-up-right-and-down-left-from-center"
+                      ></i
+                    ></a>
+                    <a href="#" class="wish_list" title="Wish List"
+                      ><i class="fa-regular fa-heart"></i
+                    ></a>
+                    <a href="#" class="product_details" title="Product Details"
+                      ><i class="fa-solid fa-plus"></i
+                    ></a>
+                  </div>
+                  <div class="column_view d-flex between">
+                    <div class="d-flex">
+                        <div>
+                            <a href="#"><img class="author-img" src="./assets/images/author.jpg" alt="Agent image"></a>
+                        </div>
+                        <div class="agent_brief">
+                            <h6><a href="#">William Seklo</a></h6>
+                            <small>Estate Agents</small>
+                        </div>
+                    </div>
+                    <div class="links d-flex">
+                        <a href="#" class="quick_view" title="Quick View"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                        <a href="#" class="wish_list" title="Wish List"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#" class="product_details" title="Product Details"><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card_footer">
+                <p class="product_price">
+                    <span> &dollar;34,900</span>/Month
+                </p>
+            </div>
+                </div> 
+
+              <!-- card 2  -->
+              <div class="shop-card">
+                <div class="card-header">
+                  <figure>
+                    <img class="card-img" src="./assets/images/grid-1.jpg" alt="" />
+                  </figure>
+                  <img class="author-img" src="./assets/images/author.jpg" alt="" />
+                </div>
+                <div class="card-body">
+                  <div class="card-body-heading d-flex between">
+                    <p>FOR RENT</p>
+                    <!-- hide  -->
+                    <p class="">&dollar;34,900</p>
+                  </div>
+                  <a href="#">
+                    <h1>New Apartment Nice View</h1>
+                  </a>
+                  <div class="location">
+                    <a href="#" class="d-flex">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <p>Belmont Gardens, Chicago</p>
+                    </a>
+                  </div>
+                  <ul class="detail d-flex">
+                    <li><span>3 </span>Bed</li>
+                    <li><span>2 </span>Bath</li>
+                    <li><span>3450 </span>Square Ft</li>
+                  </ul>
+                  <div class="card_links flex">
+                    <a href="#" class="quick_view" title="Quick View"
+                      ><i
+                        class="fa-solid fa-up-right-and-down-left-from-center"
+                      ></i
+                    ></a>
+                    <a href="#" class="wish_list" title="Wish List"
+                      ><i class="fa-regular fa-heart"></i
+                    ></a>
+                    <a href="#" class="product_details" title="Product Details"
+                      ><i class="fa-solid fa-plus"></i
+                    ></a>
+                  </div>
+                  <div class="column_view d-flex between">
+                    <div class="d-flex">
+                        <div>
+                            <a href="#"><img class="author-img" src="./assets/images/author.jpg" alt="Agent image"></a>
+                        </div>
+                        <div class="agent_brief">
+                            <h6><a href="#">William Seklo</a></h6>
+                            <small>Estate Agents</small>
+                        </div>
+                    </div>
+                    <div class="links d-flex">
+                        <a href="#" class="quick_view" title="Quick View"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                        <a href="#" class="wish_list" title="Wish List"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#" class="product_details" title="Product Details"><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card_footer">
+                <p class="product_price">
+                    <span> &dollar;34,900</span>/Month
+                </p>
+            </div>
+                </div>             
+
+              </div>
+            </div>
+
+            <!-- Card Section -->
+            <div class="column-30 shop-right">
+              <h3>Advance Information</h3>
+              <div class="sidebar">
               <div class="widget">
                 <h4>Property Type</h4>
                 <ul>
                   <li>
-                    <a href="shop-right-sidebar.html">
-                      <label class="checkbox-item"
-                        >House
-                        <input type="checkbox" checked="checked" />
-                        <span class="checkmark"></span>
-                      </label>
-                      <span class="categorey-no">3,924</span>
-                    </a>
+                    <label class="checkbox-item"
+                      >House
+                      <input type="checkbox" checked="checked" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="categorey-no">3,924</span>
                   </li>
                   <li>
                     <label class="checkbox-item"
@@ -142,6 +297,7 @@
                   </div>
                 </div>
               </div>
+            </div>
             </div>
           </div>
         </div>
