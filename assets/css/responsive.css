@@ -57,6 +57,7 @@
   }
   .blog_meta ul {
     gap: 8px;
+    white-space: nowrap;
   }
   .blog_meta ul li a {
     font-size: 11px;
