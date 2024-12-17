@@ -76,7 +76,7 @@
   }
 
   /* shop section  */
-  .toggle{
+  .toggle {
     margin-inline-start: 0px;
   }
 }
@@ -84,5 +84,70 @@
 @media (max-width: 500px) {
   .team_wrapper {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .container {
+    padding: 0 30px;
+    p {
+      font-size: 15px;
+    }
+    .right_container {
+      .widget {
+        padding: 35px 22px 40px 22px;
+        h4{text-align: center;}
+    }
+      .widget.author-widget {
+        .product-ratting  {
+          ul{
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+          }
+      }
+        img {
+          width: 100px;
+        }
+      }
+
+      .widget.blog ul li {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .widget.follow ul {
+      gap: 5px;
+  }
+  .widget.tags ul li {
+    padding: 9px 12px;
+    a{font-size: 14px;}
+}
+    }
+    .left_content {
+      h1 {
+        margin: 34px 0 9px;
+        font-size: 27px;
+      }
+      .property_detail{
+        column-gap: 0;
+        ul{border-right: 0; padding: 39px 41px 30px 39px;}
+      }
+      .feature-list{
+        .feature-list-item{
+          flex-direction: column;
+          h6{text-align: center;}
+        }
+      }
+      .blog_meta {
+        ul {
+          gap: 20px;
+          flex-wrap: wrap;
+          li {
+            padding: 10px 17px;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
   }
 }
