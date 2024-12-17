@@ -94,6 +94,7 @@ p {
   line-height: 2;
 }
 
+
 /* shop css start*/
 .shop {
   margin-block-start: 50px;
@@ -398,6 +399,38 @@ input#off:checked ~ .shop-card-container {
 }
 /* shop section right side end  */
 /* shop css end  */
+
+
+
+/* shop css */
+/* filter in top  */
+input[name="toggle"]{
+  /* display: none; */
+}
+.toggle{
+  display: flex;
+}
+.toggle button{
+  border: 0;
+  padding-inline-end: 20px;
+  margin-top: 10px;
+}
+.toggle label
+{
+  font-size: 40px;
+}
+.toggle select{
+  margin-inline-end: 20px;
+  padding:0px 60px;
+  border: 1px solid;
+  width:auto ;  
+}
+/* dynamic on off layout  */
+input#on ~ .toggle label.on i{
+  color: #ff5a3c;
+}
+
+
 /* team style  */
 /* first {  */
 .plot_brief .user {
