@@ -94,15 +94,19 @@ p {
   line-height: 2;
 }
 
-
 /* shop css start*/
 .shop {
   margin-block-start: 50px;
   padding-inline: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   @media only screen and (max-width: 599px) {
     padding-inline: 0px;
   }
-
+  /* Responsive Styles */
+  @media only screen and (max-width: 991px) {
+    grid-template-columns: 1fr;
+  }
   .column-70 {
     input[type="radio"] {
       display: none;
@@ -123,6 +127,9 @@ p {
     border: 0;
     background-color: var(--color-hover);
     cursor: pointer;
+    i {
+      font-size: 25px;
+    }
     &:hover {
       background-color: var(--color-deep-1);
     }
@@ -146,6 +153,7 @@ p {
 }
 .short {
   gap: 25px;
+  margin-block-end: 20px;
   select {
     width: 150px;
     height: 40px;
@@ -297,6 +305,9 @@ input#on:checked ~ .shop-card-container {
 }
 /* on is end  */
 /* off is flex/list  */
+input#off:checked ~ .toggle label.on i {
+  color: var(--color-dark);
+}
 input#off:checked ~ .toggle label.off i {
   color: var(--color-hover);
 }
@@ -400,36 +411,32 @@ input#off:checked ~ .shop-card-container {
 /* shop section right side end  */
 /* shop css end  */
 
-
-
 /* shop css */
 /* filter in top  */
-input[name="toggle"]{
+input[name="toggle"] {
   /* display: none; */
 }
-.toggle{
+.toggle {
   display: flex;
 }
-.toggle button{
+.toggle button {
   border: 0;
   padding-inline-end: 20px;
   margin-top: 10px;
 }
-.toggle label
-{
+.toggle label {
   font-size: 40px;
 }
-.toggle select{
+.toggle select {
   margin-inline-end: 20px;
-  padding:0px 60px;
+  padding: 0px 60px;
   border: 1px solid;
-  width:auto ;  
+  width: auto;
 }
 /* dynamic on off layout  */
-input#on ~ .toggle label.on i{
+input#on ~ .toggle label.on i {
   color: #ff5a3c;
 }
-
 
 /* team style  */
 /* first {  */
