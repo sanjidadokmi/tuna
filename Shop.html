@@ -398,7 +398,7 @@
 
               <!-- widget 3 -->
               <div class="widget">
-                <h4>Price Renge</h4>
+                <h4>Price Range</h4>
                 <ul>
                   <!-- list 1  -->
                   <li class="d-flex between">
@@ -414,7 +414,7 @@
                   <!-- list 2  -->
                   <li class="d-flex between">
                     <label class="checkbox-item d-flex">
-                      <input class="widget-checkbox" type="checkbox" checked/>
+                      <input class="widget-checkbox" type="checkbox" checked />
                       <span class="check-mark">
                         <i class="fa-solid fa-check"></i>
                       </span>
@@ -439,37 +439,22 @@
               <!-- widget 4 -->
               <div class="widget">
                 <h4>Filter by price</h4>
-                <div class="price_filter">
-                  <div class="price_slider_amount">
-                    <input type="submit" value="Your range:" />
-                    <input
-                      type="text"
-                      class="amount"
-                      name="price"
-                      placeholder="Add Your Price"
-                    />
+                <div class="range-slider-container">
+                  <div class="range-text">
+                    <label for="slider">Your Range:</label>
+                    <span class="value-display" id="slider-value">50</span>
                   </div>
-                  <div
-                    class="slider-range ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
-                  >
-                    <div
-                      class="ui-slider-range ui-widget-header ui-corner-all"
-                      style="left: 0%; width: 29.2929%"
-                    ></div>
-                    <span
-                      class="ui-slider-handle ui-state-default ui-corner-all"
-                      tabindex="0"
-                      style="left: 0%"
-                    ></span
-                    ><span
-                      class="ui-slider-handle ui-state-default ui-corner-all"
-                      tabindex="0"
-                      style="left: 29.2929%"
-                    ></span>
-                  </div>
+                  <input
+                    type="range"
+                    id="range_slider"
+                    min="0"
+                    max="100"
+                    value="50"
+                    step="1"
+                  />
                 </div>
               </div>
-              
+
               <!-- widget 5 -->
               <div class="widget">
                 <h4>Bed/Bath</h4>
@@ -560,7 +545,6 @@
                   </li>
                 </ul>
               </div>
-
             </div>
           </div>
         </div>
@@ -569,5 +553,13 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script>
+      const range_slider = document.getElementById("range_slider");
+      const sliderValue = document.getElementById("slider-value");
+
+      range_slider.addEventListener("input", () => {
+        sliderValue.textContent = range_slider.value;
+      });
+    </script>
   </body>
 </html>

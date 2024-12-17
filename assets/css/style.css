@@ -115,11 +115,11 @@ p {
   margin-inline-start: 10px;
   input,
   button {
-    padding: 10px;
-    border: 0;
+    padding: 20px;
   }
   button {
     color: var(--color-light);
+    border: 0;
     background-color: var(--color-hover);
     cursor: pointer;
     &:hover {
@@ -164,6 +164,7 @@ figure .card-img {
 }
 .shop-card {
   width: 100%;
+  box-shadow: 0 5px 20px 0 rgba(23, 44, 82, 0.1);
 }
 .card-title {
   font-size: 1.4rem;
@@ -229,18 +230,19 @@ figure .card-img {
   }
 }
 .shop {
+  flex-wrap: nowrap !important;
+  gap: 50px;
   .shop-left {
-    flex: 0 0 60%;
+    flex: 0 0 70%;
     input[type="radio"] {
       display: none;
     }
     .shop-card-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 20px;
+      gap: 40px;
       padding-inline-end: 20px;
       width: 100%;
-      overflow: hidden;
       @media only screen and (max-width: 599px) {
         grid-template-columns: 1fr;
         gap: 0px;
@@ -267,6 +269,9 @@ figure .card-img {
       }
     }
   }
+  .shop-right {
+    flex: 0 0 30%;
+  }
 }
 
 /* on is grid  */
@@ -277,6 +282,7 @@ input#on:checked ~ .shop-card-container {
   /* card style for grid view  */
   .shop-card {
     .card-body {
+      padding: 20px;
       .card-body-heading {
         .product_price {
           display: none;
@@ -301,6 +307,7 @@ input#off:checked ~ .shop-card-container {
     grid-template-columns: 1fr 1.3fr;
     padding: 20px;
     gap: 20px;
+    box-sizing: border-box;
     .card-header {
       .author-img {
         display: none;
@@ -323,11 +330,35 @@ input#off:checked ~ .shop-card-container {
 /* shop section right side start  */
 .shop-right {
   .sidebar {
+    margin-top: 30px;
     .widget {
       margin: 0px;
-      padding-block-end: 0px;
-      ul {
+      margin-bottom: 40px;
+      ul,
+      .range-slider-container {
         padding-block-start: 20px;
+      }
+      .range-slider-container {
+        input[type="range"] {
+          -webkit-appearance: none;
+          width: 100%;
+          height: 1px;
+          background: #000;
+          border-radius: 5px;
+          outline: none;
+          margin: 20px 0;
+          transition: background 0.3s;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 12px;
+          height: 12px;
+          background: var(--color-hover);
+          border-radius: 50%;
+          cursor: pointer;
+          transition: background 0.3s;
+        }
       }
     }
   }
