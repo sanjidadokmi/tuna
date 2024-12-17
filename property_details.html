@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- start of banner slider -->
-    <!-- <section id="banner_slider">
+     <section id="banner_slider">
       <div id="slider">
         <div>
           <img src="./assets/images/banner-slider/1.jpg" alt="1" />
@@ -40,7 +40,7 @@
           <img src="./assets/images/banner-slider/5.jpg" alt="1" />
         </div>
       </div>
-    </section> -->
+    </section> 
     <!-- end of banner slider -->
 
     <!-- content start -->
@@ -316,6 +316,66 @@
                 </ul>
               </div>
 
+              <div class="widget grid-slide">
+                <h4>Popular Posts</h4>
+                <div class="grid-slider ">
+                  <div class="product_item">
+                    <div class="product_img">
+                      <a href="">
+                        <img src="./assets/images/gallery/1.jpg" alt="">
+                        <div class="circle">
+                          <img src="./assets/images/author.jpg" alt="">
+                        </div>
+                      </a>
+                    </div>
+                    <div class="product_info">
+                      <div class="product_price">
+                        <span>$349,00 <label>/Month</label></span>
+                      </div>
+                      <h2 class="product_title">New Apartment Nice View</h2>
+                      <div class="location">
+                        <a href="#" class="d-flex">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <p>Belmont Gardens, Chicago</p>
+                        </a>
+                      </div>
+                      <ul class="product-detail d-flex">
+                        <li><span>3 </span>Bed</li>
+                        <li><span>2 </span>Bath</li>
+                        <li><span>3450 </span>Square Ft</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_item">
+                    <div class="product_img">
+                      <a href="">
+                        <img src="./assets/images/gallery/1.jpg" alt="">
+                        <div class="circle">
+                          <img src="./assets/images/author.jpg" alt="">
+                        </div>
+                      </a>
+                    </div>
+                    <div class="product_info">
+                      <div class="product_price">
+                        <span>$349,00 <label>/Month</label></span>
+                      </div>
+                      <h2 class="product_title">New Apartment Nice View</h2>
+                      <div class="location">
+                        <a href="#" class="d-flex">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <p>Belmont Gardens, Chicago</p>
+                        </a>
+                      </div>
+                      <ul class="product-detail d-flex">
+                        <li><span>3 </span>Bed</li>
+                        <li><span>2 </span>Bath</li>
+                        <li><span>3450 </span>Square Ft</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div class="widget tags">
                 <h4>Popular Tags</h4>
                 <ul>
@@ -345,5 +405,16 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="./assets/js/main.js"></script>
+    <script>
+      $(document).ready(function(){
+  $('.grid-slider').slick({
+    slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  dots:true,
+  
+  });
+});
+    </script>
   </body>
 </html>

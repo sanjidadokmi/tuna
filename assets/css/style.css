@@ -941,3 +941,60 @@ label.checkbox_item .checkmark {
   border: 1px solid #f6f6f6;
   padding-bottom: 40px;
 }
+/* property details */
+.grid-slider {
+  margin-top: 30px;
+}
+
+.product_img {
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.circle img {
+  width: 65px;
+  border-radius: 50%;
+}
+
+div.product_item {
+  box-shadow: 1px 5px 13px 1px rgba(23, 44, 82, 0.1);
+  margin-bottom: 35px;
+}
+
+.product_info {
+  padding: 30px 17px 55px 20px;
+}
+.grid-slider .slick-dots li button {
+  font-size: 0;                
+  line-height: 0;              
+  width: 12px;                 
+  height: 12px;
+  border: 2px solid #ccc;      
+  border-radius: 50%;          
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/* Active dot styling */
+.grid-slider .slick-dots li.slick-active button {
+  background-color: #333;     
+  border-color: #333;          
+}
+
+/* Center and space the dots */
+.grid-slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-top: 15px;
+  list-style: none;            
+}
+
+.grid-slider .slick-dots li {
+  margin: 0 5px;               
+}
