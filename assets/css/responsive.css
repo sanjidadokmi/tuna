@@ -152,3 +152,10 @@
     }
   }
 }
+
+
+@media (min-width:1025px){
+  .container{
+    padding: 0 30px;
+  }
+}
