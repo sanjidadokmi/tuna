@@ -305,6 +305,9 @@ input#on:checked ~ .shop-card-container {
 }
 /* on is end  */
 /* off is flex/list  */
+input#off:checked ~ .toggle label.on i {
+  color: var(--color-dark);
+}
 input#off:checked ~ .toggle label.off i {
   color: var(--color-hover);
 }
