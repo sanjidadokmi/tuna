@@ -1,4 +1,3 @@
-
 //banner slider
 $(document).ready(function(){
   $('#slider').slick({

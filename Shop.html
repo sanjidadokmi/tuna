@@ -17,6 +17,233 @@
   <body>
     <div class="shop_grid">
       <div class="container">
+
+        <div class="row shop">
+          <div class="shop-left">
+            <!-- Toggle Buttons -->
+            <input type="radio" name="toggle" id="on" checked />
+            <input type="radio" name="toggle" id="off" />
+
+            <div class="toggle d-flex">
+              <label for="on" class="on"
+                ><i class="fa-solid fa-table-cells-large"></i
+              ></label>
+
+              <label for="off" class="off"
+                ><i class="fa-solid fa-list-ul"></i
+              ></label>
+
+              <!-- search options  -->
+              <div class="short d-flex">
+                <select name="" id="" class="short-select-1">
+                  <option value="">Default Setting</option>
+                </select>
+                <select name="" id="" class="short-select-2">
+                  <option value="">Per Page 12</option>
+                </select>
+              </div>
+            </div>
+            <div class="search d-flex">
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Search your keyword..."
+              />
+              <button class="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+
+            <!-- card container for all cards  -->
+            <div class="shop-card-container">
+              <!-- card 1  -->
+              <div class="shop-card">
+                <div class="card-header">
+                  <figure>
+                    <img
+                      class="card-img"
+                      src="./assets/images/grid-1.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <img
+                    class="author-img"
+                    src="./assets/images/author.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="card-body">
+                  <div class="card-body-heading d-flex between">
+                    <p class="label">FOR RENT</p>
+                    <!-- hide  -->
+                    <p class="product_price">
+                      <span>&dollar;34,900</span>/Month
+                    </p>
+                  </div>
+                  <a href="#">
+                    <h1 class="card-title">New Apartment Nice View</h1>
+                  </a>
+                  <div class="location">
+                    <a href="#" class="d-flex">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <p>Belmont Gardens, Chicago</p>
+                    </a>
+                  </div>
+                  <ul class="product-detail d-flex">
+                    <li class="d-flex between"><span>3 </span>Bed</li>
+                    <li><span>2 </span>Bath</li>
+                    <li><span>3450 </span>Square Ft</li>
+                  </ul>
+
+                  <div class="card-links first flex">
+                    <a href="#" class="quick_view" title="Quick View"
+                      ><i
+                        class="fa-solid fa-up-right-and-down-left-from-center"
+                      ></i
+                    ></a>
+                    <a href="#" class="wish_list" title="Wish List"
+                      ><i class="fa-regular fa-heart"></i
+                    ></a>
+                    <a href="#" class="product_details" title="Product Details"
+                      ><i class="fa-solid fa-plus"></i
+                    ></a>
+                  </div>
+
+                  <div class="column_view d-flex between">
+                    <div class="d-flex">
+                      <div>
+                        <a href="#"
+                          ><img
+                            class="author-img"
+                            src="./assets/images/author.jpg"
+                            alt="Agent image"
+                        /></a>
+                      </div>
+                      <div class="agent_brief">
+                        <h6><a href="#">William Seklo</a></h6>
+                        <small>Estate Agents</small>
+                      </div>
+                    </div>
+
+                    <div class="card-links flex">
+                      <a href="#" class="quick_view" title="Quick View"
+                        ><i
+                          class="fa-solid fa-up-right-and-down-left-from-center"
+                        ></i
+                      ></a>
+                      <a href="#" class="wish_list" title="Wish List"
+                        ><i class="fa-regular fa-heart"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="product_details"
+                        title="Product Details"
+                        ><i class="fa-solid fa-plus"></i
+                      ></a>
+                    </div>
+                  </div>
+
+                  <div class="card_footer">
+                    <p class="product_price">
+                      <span>&dollar;34,900</span>/Month
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 2  -->
+              <div class="shop-card">
+                <div class="card-header">
+                  <figure>
+                    <img
+                      class="card-img"
+                      src="./assets/images/grid-1.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <img
+                    class="author-img"
+                    src="./assets/images/author.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="card-body">
+                  <div class="card-body-heading d-flex between">
+                    <p class="label">FOR RENT</p>
+                    <!-- hide  -->
+                    <p class="product_price">
+                      <span>&dollar;34,900</span>/Month
+                    </p>
+                  </div>
+                  <a href="#">
+                    <h1 class="card-title">New Apartment Nice View</h1>
+                  </a>
+                  <div class="location">
+                    <a href="#" class="d-flex">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <p>Belmont Gardens, Chicago</p>
+                    </a>
+                  </div>
+                  <ul class="product-detail d-flex">
+                    <li><span>3 </span>Bed</li>
+                    <li><span>2 </span>Bath</li>
+                    <li><span>3450 </span>Square Ft</li>
+                  </ul>
+                  <div class="card-links flex">
+                    <a href="#" class="quick_view" title="Quick View"
+                      ><i
+                        class="fa-solid fa-up-right-and-down-left-from-center"
+                      ></i
+                    ></a>
+                    <a href="#" class="wish_list" title="Wish List"
+                      ><i class="fa-regular fa-heart"></i
+                    ></a>
+                    <a href="#" class="product_details" title="Product Details"
+                      ><i class="fa-solid fa-plus"></i
+                    ></a>
+                  </div>
+                  <div class="column_view d-flex between">
+                    <div class="d-flex">
+                      <div>
+                        <a href="#"
+                          ><img
+                            class="author-img"
+                            src="./assets/images/author.jpg"
+                            alt="Agent image"
+                        /></a>
+                      </div>
+                      <div class="agent_brief">
+                        <h6><a href="#">William Seklo</a></h6>
+                        <small>Estate Agents</small>
+                      </div>
+                    </div>
+                    <div class="card-links flex">
+                      <a href="#" class="quick_view" title="Quick View"
+                        ><i
+                          class="fa-solid fa-up-right-and-down-left-from-center"
+                        ></i
+                      ></a>
+                      <a href="#" class="wish_list" title="Wish List"
+                        ><i class="fa-regular fa-heart"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="product_details"
+                        title="Product Details"
+                        ><i class="fa-solid fa-plus"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="card_footer">
+                    <p class="product_price">
+                      <span>&dollar;34,900</span>/Month
+                    </p>
+                  </div>
+                </div>
+              </div>
+
         <div class="row">
           <div class="column-70">
             <div class="filter">
@@ -41,128 +268,309 @@
                 </select>
               </div>
               <div class="search"></div>
+
             </div>
           </div>
-          <div class="column-30">
+
+          <!-- Card Section -->
+          <div class="shop-right">
             <h3>Advance Information</h3>
+            <p>About 9,620 results (0.62 seconds)</p>
             <div class="sidebar">
+              <!-- widget 1 -->
               <div class="widget">
                 <h4>Property Type</h4>
                 <ul>
-                  <li>
-                    <a href="shop-right-sidebar.html">
-                      <label class="checkbox-item"
-                        >House
-                        <input type="checkbox" checked="checked" />
-                        <span class="checkmark"></span>
-                      </label>
-                      <span class="categorey-no">3,924</span>
-                    </a>
+                  <!-- list 1  -->
+                  <li class="d-flex between">
+                    <label class="checkbox-item d-flex">
+                      <input class="widget-checkbox" type="checkbox" checked />
+                      <span class="check-mark">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      House
+                    </label>
+                    <span class="categorey-no">3,924</span>
                   </li>
-                  <li>
-                    <label class="checkbox-item"
-                      >Single Family
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
+                  <!-- list 2  -->
+                  <li class="d-flex between">
+                    <label class="checkbox-item d-flex">
+                      <input class="widget-checkbox" type="checkbox" />
+                      <span class="check-mark">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      Single Family
                     </label>
                     <span class="categorey-no">3,610</span>
                   </li>
-                  <li>
-                    <label class="checkbox-item"
-                      >Apartment
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
+                  <!-- list 3  -->
+                  <li class="d-flex between">
+                    <label class="checkbox-item d-flex">
+                      <input class="widget-checkbox" type="checkbox" />
+                      <span class="check-mark">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      Apartment
                     </label>
                     <span class="categorey-no">2,912</span>
                   </li>
-                  <li>
-                    <label class="checkbox-item"
-                      >Office Villa
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
+                  <!-- list 4  -->
+                  <li class="d-flex between">
+                    <label class="checkbox-item d-flex">
+                      <input class="widget-checkbox" type="checkbox" />
+                      <span class="check-mark">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      Office Villa
                     </label>
                     <span class="categorey-no">2,687</span>
                   </li>
-                  <li>
-                    <label class="checkbox-item"
-                      >Luxary Home
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
+                  <!-- list 5  -->
+                  <li class="d-flex between">
+                    <label class="checkbox-item d-flex">
+                      <input class="widget-checkbox" type="checkbox" />
+                      <span class="check-mark">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      Luxary Home
                     </label>
                     <span class="categorey-no">1,853</span>
                   </li>
-                  <li>
-                    <label class="checkbox-item"
-                      >Studio
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
+                  <!-- list 6  -->
+                  <li class="d-flex between">
+                    <label class="checkbox-item d-flex">
+                      <input class="widget-checkbox" type="checkbox" />
+                      <span class="check-mark">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      Studio
                     </label>
                     <span class="categorey-no">893</span>
                   </li>
                 </ul>
+              </div>
 
-                <hr />
-
-                <h4>Price Renge</h4>
+              <!-- widget 2 -->
+              <div class="widget">
+                <h4>Amenities</h4>
                 <ul>
-                  <li>
-                    <label class="checkbox-item"
-                      >Low Budget
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
+                  <!-- list 1  -->
+                  <li class="d-flex between">
+                    <label class="checkbox-item d-flex">
+                      <input class="widget-checkbox" type="checkbox" checked />
+                      <span class="check-mark">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      Dishwasher
                     </label>
-                    <span class="categorey-no">$5,000 - $10,000</span>
+                    <span class="categorey-no">3,924</span>
                   </li>
-                  <li>
-                    <label class="checkbox-item"
-                      >Medium
-                      <input type="checkbox" checked="checked" />
-                      <span class="checkmark"></span>
+                  <!-- list 2  -->
+                  <li class="d-flex between">
+                    <label class="checkbox-item d-flex">
+                      <input class="widget-checkbox" type="checkbox" />
+                      <span class="check-mark">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      Floor Coverings
                     </label>
-                    <span class="categorey-no">$10,000 - $30,000</span>
+                    <span class="categorey-no">3,610</span>
                   </li>
-                  <li>
-                    <label class="checkbox-item"
-                      >High Budget
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
+                  <!-- list 3  -->
+                  <li class="d-flex between">
+                    <label class="checkbox-item d-flex">
+                      <input class="widget-checkbox" type="checkbox" />
+                      <span class="check-mark">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      Internet
                     </label>
-                    <span class="categorey-no">$30,000 Up</span>
+                    <span class="categorey-no">2,912</span>
+                  </li>
+                  <!-- list 4  -->
+                  <li class="d-flex between">
+                    <label class="checkbox-item d-flex">
+                      <input class="widget-checkbox" type="checkbox" />
+                      <span class="check-mark">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      Build Wardrobes
+                    </label>
+                    <span class="categorey-no">2,687</span>
+                  </li>
+                  <!-- list 5  -->
+                  <li class="d-flex between">
+                    <label class="checkbox-item d-flex">
+                      <input class="widget-checkbox" type="checkbox" />
+                      <span class="check-mark">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      Supermarket
+                    </label>
+                    <span class="categorey-no">1,853</span>
+                  </li>
+                  <!-- list 6  -->
+                  <li class="d-flex between">
+                    <label class="checkbox-item d-flex">
+                      <input class="widget-checkbox" type="checkbox" />
+                      <span class="check-mark">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      Kids Zome
+                    </label>
+                    <span class="categorey-no">893</span>
                   </li>
                 </ul>
               </div>
 
+              <!-- widget 3 -->
+              <div class="widget">
+                <h4>Price Range</h4>
+                <ul>
+                  <!-- list 1  -->
+                  <li class="d-flex between">
+                    <label class="checkbox-item d-flex">
+                      <input class="widget-checkbox" type="checkbox" />
+                      <span class="check-mark">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      Low Budget
+                    </label>
+                    <span class="categorey-no">$5,000 - $10,000</span>
+                  </li>
+                  <!-- list 2  -->
+                  <li class="d-flex between">
+                    <label class="checkbox-item d-flex">
+                      <input class="widget-checkbox" type="checkbox" checked />
+                      <span class="check-mark">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      Medium
+                    </label>
+                    <span class="categorey-no">$10,000 - $30,000</span>
+                  </li>
+                  <!-- list 3  -->
+                  <li class="d-flex between">
+                    <label class="checkbox-item d-flex">
+                      <input class="widget-checkbox" type="checkbox" />
+                      <span class="check-mark">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      High Budget
+                    </label>
+                    <span class="categorey-no">$30,000 Up </span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- widget 4 -->
               <div class="widget">
                 <h4>Filter by price</h4>
-                <div class="price_filter">
-                  <div class="price_slider_amount">
-                    <input type="submit" value="Your range:" />
-                    <input
-                      type="text"
-                      class="amount"
-                      name="price"
-                      placeholder="Add Your Price"
-                    />
+                <div class="range-slider-container">
+                  <div class="range-text">
+                    <label for="slider">Your Range:</label>
+                    <span class="value-display" id="slider-value">50</span>
                   </div>
-                  <div
-                    class="slider-range ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
-                  >
-                    <div
-                      class="ui-slider-range ui-widget-header ui-corner-all"
-                      style="left: 0%; width: 29.2929%"
-                    ></div>
-                    <span
-                      class="ui-slider-handle ui-state-default ui-corner-all"
-                      tabindex="0"
-                      style="left: 0%"
-                    ></span
-                    ><span
-                      class="ui-slider-handle ui-state-default ui-corner-all"
-                      tabindex="0"
-                      style="left: 29.2929%"
-                    ></span>
-                  </div>
+                  <input
+                    type="range"
+                    id="range_slider"
+                    min="0"
+                    max="100"
+                    value="50"
+                    step="1"
+                  />
                 </div>
+              </div>
+
+              <!-- widget 5 -->
+              <div class="widget">
+                <h4>Bed/Bath</h4>
+                <ul>
+                  <!-- list 1  -->
+                  <li class="d-flex between">
+                    <label class="checkbox-item d-flex">
+                      <input class="widget-checkbox" type="checkbox" checked />
+                      <span class="check-mark">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      Single
+                    </label>
+                    <span class="categorey-no">3,924</span>
+                  </li>
+                  <!-- list 2  -->
+                  <li class="d-flex between">
+                    <label class="checkbox-item d-flex">
+                      <input class="widget-checkbox" type="checkbox" />
+                      <span class="check-mark">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      Double
+                    </label>
+                    <span class="categorey-no">3,610</span>
+                  </li>
+                  <!-- list 3  -->
+                  <li class="d-flex between">
+                    <label class="checkbox-item d-flex">
+                      <input class="widget-checkbox" type="checkbox" />
+                      <span class="check-mark">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      Up To 3
+                    </label>
+                    <span class="categorey-no">2,912 </span>
+                  </li>
+                  <!-- list 4  -->
+                  <li class="d-flex between">
+                    <label class="checkbox-item d-flex">
+                      <input class="widget-checkbox" type="checkbox" />
+                      <span class="check-mark">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      Up To 5
+                    </label>
+                    <span class="categorey-no">2,687 </span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- widget 6 -->
+              <div class="widget">
+                <h4>Category</h4>
+                <ul>
+                  <!-- list 1  -->
+                  <li class="d-flex between">
+                    <label class="checkbox-item d-flex">
+                      <input class="widget-checkbox" type="checkbox" checked />
+                      <span class="check-mark">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      Buying
+                    </label>
+                    <span class="categorey-no">3,924</span>
+                  </li>
+                  <!-- list 2  -->
+                  <li class="d-flex between">
+                    <label class="checkbox-item d-flex">
+                      <input class="widget-checkbox" type="checkbox" />
+                      <span class="check-mark">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      Renting
+                    </label>
+                    <span class="categorey-no">3,610</span>
+                  </li>
+                  <!-- list 3  -->
+                  <li class="d-flex between">
+                    <label class="checkbox-item d-flex">
+                      <input class="widget-checkbox" type="checkbox" />
+                      <span class="check-mark">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      Selling
+                    </label>
+                    <span class="categorey-no">2,912 </span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -172,5 +580,13 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script>
+      const range_slider = document.getElementById("range_slider");
+      const sliderValue = document.getElementById("slider-value");
+
+      range_slider.addEventListener("input", () => {
+        sliderValue.textContent = range_slider.value;
+      });
+    </script>
   </body>
 </html>
